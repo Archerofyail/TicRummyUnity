@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class CardObject : MonoBehaviour
 {
-    [SerializeField]
-    public int NumDecks { get; private set; }
+    public Card Card { get; private set; }
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +17,8 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void StartGame()
+    public CardObject(Card card)
     {
-
+        Card = card;
     }
-
-
 }

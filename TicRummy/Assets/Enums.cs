@@ -64,7 +64,7 @@ public static class CardHelper
     {
         var shuffledDeck = new List<Card>(deck.Count);
 
-        for(int i = 0; i < deck.Count; i++)
+        for (int i = 0; i < deck.Count; i++)
         {
             shuffledDeck.Add(deck[Random.Range(0, deck.Count - 1)]);
         }
